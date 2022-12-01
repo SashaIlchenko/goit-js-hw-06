@@ -8,5 +8,5 @@ function onInputBlur(event) {
     console.log(event.currentTarget.value.length, inputEl.getAttribute('data-length'));
 
 }
-console.dir(inputEl);
+
 
