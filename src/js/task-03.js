@@ -15,10 +15,10 @@ const images = [
 const galeryListEl = document.querySelector('.gallery');
 const makeGaleryMarkup = image => {
   const { url, alt } = image;
-  return
-  `<li class="item"><img src='${url}' alt = '${alt}'></img></li>`;
+  return `<li><img src='${url}' alt = '${alt}' width = '300px' height = '150'></img></li>`;
 };
-
 const makeGaleryEl = images.map(makeGaleryMarkup).join('');
 galeryListEl.insertAdjacentHTML('afterbegin', makeGaleryEl);
-console.log(makeGaleryEl);
+galeryListEl.style.display = 'flex';
+galeryListEl.style.listStyleType = 'none';
+
