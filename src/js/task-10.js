@@ -7,8 +7,6 @@ const refs = {
 refs.createBtn.addEventListener('click', onAmount);
 refs.destroyBtn.addEventListener('click', destroyBoxes);
 
-console.dir(refs.input);
-
 function onAmount() {
   const amount = refs.input.value;
   createBoxes(amount);
