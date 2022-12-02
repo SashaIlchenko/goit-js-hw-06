@@ -16,7 +16,7 @@ function onAmount() {
 function createBoxes(amount) {
   let startSize = 30;
   const fragment = document.createDocumentFragment();
-  for (let i = 0; i <= amount; i += 1) {
+  for (let i = 1; i <= amount; i += 1) {
     const size = startSize + i * 10;
     const divEl = document.createElement('div');
     divEl.style.width = `${size}px`;
